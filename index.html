@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Color Picker</title>
+</head>
+
+<body>
+  <h1>Upload Image</h1>
+  <div class="container">
+    <br>
+    <img id="imagePreview" src="#" alt="Preview">
+    <br>
+    <input type="file" id="fileInput" onchange="previewImage(event)" accept="image/*">
+
+  </div>
+  <div class="color-pick">
+    <button id="btn">color pick</button>
+    <h4 id="result"></h4>
+  </div>
+  <!-- <script>const button = document.getElementById('btn')
+    const result = document.getElementById('result')
+
+    const colorPicker = async () => {
+      const eyeDropper = new EyeDropper()
+      const { sRGBHex } = await eyeDropper.open()
+
+      result.innerHTML = sRGBHex
+    }
+
+    button.addEventListener('click', colorPicker)
+
+    function previewImage(event) {
+      var reader = new FileReader()
+      reader.onload = function () {
+        var output = document.getElementById('imagePreview')
+        output.src = reader.result
+      }
+      reader.readAsDataURL(event.target.files[0])
+    }</script> -->
+  <script src="color.js"></script>
+</body>
+
+</html>
